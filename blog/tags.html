@@ -1,0 +1,27 @@
+---
+layout: displayindex
+title: Tag Index
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="container">
+  {% include tagCloud.html %}  
+  <hr>
+  {% for tag in site.tags %}
+  <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+  <dl class="tags-expo-posts">
+    {% for post in tag[1] %}
+    <dt>
+      <code>{{ post.date | date_to_string }}</code> <i class="fas fa-angle-double-right"></i> <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;{% include status-indicator.html status=post.status%}
+    </dt>
+    {% if post.description %}
+ <dd style="text-align: justify">{{ post.description  | markdownify }}
+    </dd>
+		{% endif %}
+    {% endfor %}
+  </dl>
+	    {% endfor %}
+</div>
+	 
+	  <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}" async></script>

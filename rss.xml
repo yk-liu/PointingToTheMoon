@@ -1,0 +1,30 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>{{site.title}}</title>
+ <description>This is RSS feed for my website</description>
+ <link href="{{site.url}}"/>
+ <lastBuildDate>{{site.time | date_to_xmlschema }}</lastBuildDate>
+ <pubDate>{{site.time | date_to_xmlschema }}</pubDate>
+   <author>
+    <name>{{site.author.name}}</name>
+		<email>{{site.author.email}}</email>
+  </author>
+ <ttl>1800</ttl>
+
+ {% for post in site.posts %}
+	 {% if post.rss %}
+	 <entry>
+		<title>{{ post.title }}</title>
+		<description>{{ post.description }}</description>
+		<link href="{{site.url}}{{ post.url }}" />
+		<updated>{{ post.edit | date_to_xmlschema }}</updated>
+		<rights type="html"> &amp;copy; {{site.author.name}} </rights>
+	 </entry>
+	 {% endif %}
+ {% endfor %}
+
+</feed>

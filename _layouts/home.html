@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% include head.html %}
+   <!-- main style sheet -->  
+   <link rel="stylesheet" href="/assets/css/home.css">
+   <!-- font awesome --> 
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+   <!-- google font-->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <!-- -->  
+   <body>
+      <div id="particles-js">
+         <div class="background-image" style="right: 0;top: 4.5%;width: auto;position: absolute;margin-right: 6%;background: transparent;">
+            <img src="/about/Moon.png" alt="picture of full Moon">
+         </div>
+         <div class="header">
+            <h1>
+               <span class="site-title">{{site.title}}</span>
+               <span class="site-description">{{site.description}}</span>
+            </h1>
+            <div class="header-links">
+               <a class="link" href="/blog">Posts</a>
+               <!-- <a class="link" href="/repo" >Codes</a> -->
+               <a class="link" href="/about" >About</a>
+            </div>
+         </div>
+         <a class="down" href="#about" data-scroll><i class="icon fas fa-chevron-down fa-lg" aria-hidden="true" style="z-index: 2;"></i></a>
+      </div>
+      <section id="about">
+         <div class="lower">
+            
+               {{ content }}
+            
+         </div >
+      </section>
+      <script src= "/assets/js/sweet-scroll.min.js"></script>
+      <script src="/assets/js/particles_conf.js"></script>
+      <script src="/assets/js/particles.min.js"></script>
+   </body>
+   {% include footer.html analytics=false %} 
+</html>

@@ -47,8 +47,6 @@ plugins:
   - jekyll-sitemap
   
 
-permalink: none
-
 defaults:
   -
     scope:

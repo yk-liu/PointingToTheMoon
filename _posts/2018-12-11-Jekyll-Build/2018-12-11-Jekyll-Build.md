@@ -3,9 +3,21 @@ title: Build Your Blog with GitHub Pages
 tags: Jekyll
 categories: Jekyll
 mathjax: false
-description: Build Your Blog with GitHub Pages
-
+description: Build Your Blog with GitHub Pages. This is a sketch of how to use my theme `PointingToTheMoon` to write your blog. This theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
 ---
+
+# What Do I Have to Offer
+
+There are many theme out there, yet none of them suits my need. 
+
+1. I want my post page's width to be at least 80% so the reader can simply read the post. I don't want persistent sidebars with a big picture of the blog owner
+2. I want my post to be extra readable. The font need to be clear and large enough. Not Consolas fonts or Comic Sans. 
+3. I need mathjax. Other themes seems rarely supporting it.
+4. I want my assets in the same folder as post. I use the work-around as direct link it to the `raw.github` page.
+5. I want cool things, such as visitor map, tag clouds and category clouds, commenting. I want Chinese reader to be able to comment as well. Disqus is blocked, and other sources are poorly maintained. So I chose commentit. ALl you need is a GitHub account or Facebook or Twitter.
+6. I have ZERO experience with front end stuff. The JavaScript is exhausting, so I avoided using JS as much as possible. Turns out a hidden side bar can be down in pure CSS.
+
+Now I ended up with this theme. I know it's not perfect, but I will settle it for now. I will consider any suggestions you guys make, just comment it in this page.
 
 # Why GitHub Pages?
 
@@ -27,8 +39,6 @@ description: Build Your Blog with GitHub Pages
 4. Limitations
 
    GitHub Pages source repositories have a recommended limit of 1GB. Published GitHub Pages sites may be no larger than 1 GB. GitHub Pages sites have a soft bandwidth limit of 100GB per month.	GitHub Pages sites have a soft limit of 10 builds per hour. See [here](https://help.github.com/articles/what-is-github-pages/#usage-limits)
-
-    
 
 # About Git
 

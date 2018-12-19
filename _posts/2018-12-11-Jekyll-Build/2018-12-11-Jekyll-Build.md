@@ -2,15 +2,15 @@
 title: Build Your Blog with GitHub Pages
 tags: Jekyll
 categories: Jekyll
-mathjax: true
+mathjax: false
 description: Build Your Blog with GitHub Pages
----
 
-This page's comment is enabled, scroll down to see.
+---
 
 # Why GitHub Pages?
 
 1. It's simple.
+
    1. The Domain is just `username.github.io`. You don't need to buy your own domain. PS, All domains must be registered by the owner with ID. So that saves you a ton of trouble. But GitHub pages also allows you to 
    2. GitHub pages build the website for you. This means you don't need to install `jekyll` or `ruby`, you don't need you locally build your website and publish it. You just commit your source code and that's all. 
    3. After properly configured, you can write in `markdown`, and `push` (a fancy name for upload) to GitHub.  Things like equations, lists, tables, mermaid-diagrams, images, or videos are automated supported. This means all you'll need is a text editor as simple as good old notepad.exe to write your post, yet I strongly recommend [`typora`](https://www.typora.io/). As the time of writing, it is free.
@@ -27,28 +27,29 @@ This page's comment is enabled, scroll down to see.
 4. Limitations
 
    GitHub Pages source repositories have a recommended limit of 1GB. Published GitHub Pages sites may be no larger than 1 GB. GitHub Pages sites have a soft bandwidth limit of 100GB per month.	GitHub Pages sites have a soft limit of 10 builds per hour. See [here](https://help.github.com/articles/what-is-github-pages/#usage-limits)
-	
-	 
-# How do I start?
 
-Download this repo, and add it to your GitHub Desktop as local repo. CHange the name of the repo to your-username.github.io, and you are all set.
+    
 
-## About Git
+# About Git
 
 I am going to assume that you know the basic operations of git. If not, just download the [GitHub Desktop](https://desktop.github.com/), and do everything in GUI. For the most of bloggers, only commit and push is required. For you to publish your work, save your file in your editor, go to GitHub Desktop, commit your changes, and push.
 
 <img src="" width="80%">
 
-## What Should I Modify
+# Clone the The Repo
+
+Clone the [repo](https://github.com/yk-liu/PointingToTheMoon) and publish it!
+
+# What Should I Modify
 
 Here is a list of files you need to modify
 
-1. License.md: add your name.
-
+1. License.md: add your version of license at the beginning of the file.
 2. Readme.md: add your description.
-
-3. config.yaml: add your username, GitHub-links etc. 
+3. config.yml: fill in as much as you can.
+4. index.html: fill in description and (if any) proposed posts.
+5. register at [commentit.io](https://commentit.io/). This enables your website's comment feature.
+6. secret/index.html: decrypt the page use password `ykliu`. And save the page locally. Choose your password, copy and paste the html into the input textbox, and download the page. Replace secret/index.html with the html file you downloaded. Now you have a encrypted page only you can use to encrypt your other pages!
+7. Better google discovery: google site authentication. Just go to [webmaster](https://search.google.com/search-console?hl=en) and click `add property` and download the google authentication file, put in under the root of your repo. A few days later, you should be able to see your website in google search by searching `site:your-site-name.github.io` (no space in between).
 
 After that, you should be able to enjoy your blogging!
-
-

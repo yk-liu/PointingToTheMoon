@@ -1,8 +1,8 @@
 # Site settings
 title: Website title
 description: Website short description
-baseurl: "" 
-url: "https://yk-liu.github.io/PointingToTheMoon/" 
+baseurl: "/PointingToTheMoon" 
+url: "https://yk-liu.github.io" 
 
 # GitHub User settings
 username: username

@@ -22,7 +22,7 @@ author:
   github:        
   linkedin:
 
-
+#permlink: none
 # markdown
 markdown: kramdown
   

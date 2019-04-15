@@ -1,5 +1,10 @@
+# If you want to use this theme
+
+Please read [this link](https://yk-liu.github.io/jekyll/Jekyll-Build.html#what-should-i-modify).
+
 # About me
 
+Fill in your description.
 
 # About this website
 

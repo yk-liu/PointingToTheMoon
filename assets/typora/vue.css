@@ -13,7 +13,7 @@ html {
 
 body {
 		font-family: 'Source Sans Pro', sans-serif !important;
-    color: #34495e;
+    /* color: #34495e; */
     -webkit-font-smoothing: antialiased;
     line-height: 1.6rem;
     letter-spacing: 0;
@@ -206,9 +206,8 @@ ol {
 }
 
 code, tt {
-    /* font-family: Source Sans Pro, Roboto Mono, Monaco, courier, monospace !important; */
 	margin: 0 2px;
-    padding: 2px 4px;
+  padding: 2px 4px;
 	font-size: 0.92rem;
 	background-color: #eeeeee;
 	border-radius: 4px;
@@ -216,42 +215,16 @@ code, tt {
 }
 
 pre.highlight > code, tt {
-    /* font-family: Source Sans Pro, Roboto Mono, Monaco, courier, monospace !important; */
 	margin: 0 2px;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: 'Ubuntu Mono', monospace;
+	padding: 2px 4px;
 	display: block;
-    page-break-inside: avoid;
-    text-align: left;
+	page-break-inside: avoid;
+	text-align: left;
 	overflow-x: scroll;
+	font-family: 'Ubuntu Mono', monospace !important;
 }
-
-/* p > code.highlighter-rouge { */
-	/* margin: 0 2px; */
-    /* padding: 2px 4px; */
-	/* font-size: 0.92rem; */
-	/* background-color: #eeeeee; */
-	/* border-radius: 4px; */
-	/* color: #e96900; */
-	/* font-weight: bold; */
-	/* font-family: 'Source Sans Pro', sans-serif; */
-/* } */
-
-code.highlighter-rouge {
-	color: #e96900;
-}
-
-/* code.highlighter-rouge > nobr { */
-    /* color: #e96900; */
-/* } */
 
 /* code fence */
-div.highlight {
- 	background-color: #eeeeee;
-	border-radius: 4px;
-    font-family: 'Ubuntu Mono', monospace;
-}
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -314,11 +287,24 @@ div.highlight {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
 
+code.highlighter-rouge {
+	color: #e96900;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+span.highlight {
+    background-color: #9FFF9F;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 0 2px;
+    color: #222;
+    font-weight: 500;
+}
 
 blockquote {
     border-left: 4px solid #42b983;
     padding: 10px 0px 10px 15px;
-    color: #777;
+    color: #34495e;
     background-color: rgba(66, 185, 131, .1);
 }
 
@@ -373,16 +359,6 @@ table tr td:last-child {
     margin-bottom: 0;
 }
 
-hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-}
-
 @media print {
     html {
         font-size: 13px;
@@ -400,4 +376,11 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+code.language-mermaid {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: initial;
+	margin: initial;
 }

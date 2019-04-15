@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   {% include head.html %}
+   <!-- link to tagpage.css-->
+   <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/tagpage.css">
+   <!-- google PT sans for tags -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+   <!-- -->
+   {% include topnav.html %}
+   <body>
+      <div style = "margin-right: 3%;padding: 50px" class="container">
+         <h2>Can't find it? Take a look at <a href="/blog/tags">Tags</a></h2>
+         {% include search.html %}
+      </div>
+   </body>
+   {% include footer.html %} 
+</html>

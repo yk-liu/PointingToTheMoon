@@ -1,28 +1,33 @@
 # Site settings
-title: Website title
+title: Website Title
 description: Website short description
 baseurl: "/PointingToTheMoon" 
-url: "https://yk-liu.github.io" 
+#change the baseurl to "" if you are using it as your user GitHub Pages
+url: "https://yk-liu.github.io"  
+
 
 # GitHub User settings
-username: username
+username: Username
 github_username: github_username
-user_description: 
-user_title: 
+user_description: user_description
+user_title: user_title
 email: 
 
 # Blog Author settings
 author:
-  name:           
+  name:            
   picture:        
-  email:          
-  description:   
+  email:           
+  description:     
   twitter:
   facebook:
-  github:        
+  github:          
   linkedin:
+  # If you're forking this site, make sure you delete this entry!
+  clustrmap:      MlqUzlcZFdHetSQuxml5oHyt9RwVjZrsGbvyaRpMwgU 
+  # If you're forking this site, make sure you delete this entry!
 
-#permlink: none
+
 # markdown
 markdown: kramdown
   
@@ -46,6 +51,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   
+permalink: none
 
 defaults:
   -
@@ -56,10 +62,11 @@ defaults:
       toc: true
       mathjax: true
       mermaid: false
+      highlight: false
       numbering: true
-      commentable: true
       status: Completed
       protected: false
+      commentable: true
       rss: true
 
 
@@ -69,4 +76,4 @@ exclude:
  - "*.cdf"
  - "*.nb"
  - "*.bk"
- - "*.draft"
+ - "*.draft.md"

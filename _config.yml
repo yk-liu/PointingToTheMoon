@@ -1,9 +1,9 @@
 # Site settings
-title: Website Title
-description: Website short description
+title: BMA Lab
+description: Share ideas and codes
 baseurl: "" 
 #change the baseurl to "" if you are using it as your user GitHub Pages
-url: "https://yk-liu.github.io"  
+url: "https://microbma.github.io"  
 
 
 # GitHub User settings

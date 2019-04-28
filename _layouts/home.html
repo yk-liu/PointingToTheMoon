@@ -11,29 +11,22 @@
       <!-- --> 
    </head>
    <body>
-        <div class="header">
-           <div id="particles-js" style="background-image: url('https://yk-liu.github.io/about/Moon.png');background-size: 20%;background-repeat: no-repeat;background-position: 80% 20%;">
+        <div id="particles-js" style="background-image: url('https://yk-liu.github.io/about/Moon.png');background-size: 20%;background-repeat: no-repeat;background-position: 80% 20%;">
+         <div class="header">
             <h1>
                <span class="site-title">{{site.title}}</span>
                <span class="site-description">{{site.description}}</span>
             </h1>
+            <div class="header-links">
+               <a class="link" href="/blog">Posts</a>
+               <!-- <a class="link" href="/repo" >Codes</a> -->
+               <a class="link" href="/about" >About</a>
+            </div>
          </div>
          <a class="down" href="#about" data-scroll><i class="icon fas fa-chevron-down fa-lg" aria-hidden="true" style="z-index: 2;"></i></a>
       </div>
-      <section id="about">
-         <div class="lower">
-            {{ content }}
-         </div >
-      </section>
-      <script src= "https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.js"></script>
       <script src="{{site.url}}{{site.baseurl}}/assets/js/particles_conf.js"></script>
-      <script>
-         /* sweetScroll load */
-         	document.addEventListener('DOMContentLoaded', () => {
-         		const scroller = new SweetScroll({/* some options */});
-         	}, false);
-      </script>
    </body>
    {% include footer.html analytics=false %} 
 </html>

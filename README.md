@@ -2,7 +2,7 @@
 
 Please read [this link](https://yk-liu.github.io/jekyll/Jekyll-Build.html#what-should-i-modify). 
 
-I **strongly** recommand that you use the other [repo](https://github.com/yk-liu/PointingToTheMoon) I specially prepared for you! It has all the features that this webiste has and has no personal information of me. You can fork that repo or leave a star if you like. 
+I **strongly** recommand that you use this repo that I specially prepared for you! It has all the features that my personal webiste has and has no personal information of me. You can fork that repo or leave a star if you like. 
 
 However, you can still use this repo for some fine-tuning or hackering. But please at least use the "theme-for-fork" branch rather than the master branch.
 

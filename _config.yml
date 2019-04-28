@@ -1,6 +1,6 @@
 # Site settings
 title: BMA Lab
-description: Share ideas and codes
+description: Exploring wired micrbiomes
 baseurl: "" 
 #change the baseurl to "" if you are using it as your user GitHub Pages
 url: "https://microbma.github.io"  

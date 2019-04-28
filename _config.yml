@@ -75,3 +75,5 @@ exclude:
  - "*.nb"
  - "*.bk"
  - "*.draft.md"
+
+theme: jekyll-theme-slate

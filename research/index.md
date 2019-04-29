@@ -1,6 +1,6 @@
 ---
 title: Research
-layout: info
+layout: news
 Edit: 2019-04-28
 toc: false
 commentable: false

@@ -1,6 +1,5 @@
 ---
 title: Research
-layout: defaut
 Edit: 2019-04-28
 toc: false
 commentable: false

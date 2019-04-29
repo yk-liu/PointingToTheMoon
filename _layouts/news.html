@@ -1,31 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      {% include head.html %}  
-      {% if page.mathjax %}			
-      {% include markdown-enhancements/mathjax.html %}
-      {% endif %} 
-      {% include theme-vue.html%}
-      <!-- change font -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet" async>
-      <!--  -->
-   </head>
-   {% include topnav.html active="home"%}
-   <body>
-      <div id="main">
-         <div class="page">
-            <div id="content-container" style="text-align:justify">
-               {{ content }}			
-            </div>
-         </div>
-      </div>
-      {% include footer.html %} 
-   </body>
-   {% if page.mermaid == true %}
-   {% include markdown-enhancements/mermaid.html %}
-   {% endif %}
-   {% if page.highlight == true %}
-   {% include markdown-enhancements/highlight.html %}
-   {% endif %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="bma" />
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="BMA Lab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+    <style>{% include style.css %}</style>
+  </head>
+
+  {{ content }}
 </html>

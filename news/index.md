@@ -36,5 +36,6 @@
     </div>
   </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/assets/js/particles_conf.js"></script>
 </html>

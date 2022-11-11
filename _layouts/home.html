@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-   {% include head.html %}
-   <!-- main style sheet -->  
-   <link rel="stylesheet" href="/assets/css/home.css">
-   <!-- font awesome --> 
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-   <!-- google font-->
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-   <!-- -->  
+   <head>
+      {% include head.html %}
+      <!-- main style sheet -->  
+      <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/home.css">
+      <!-- font awesome --> 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+      <!-- google font-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro|Ubuntu+Mono" rel="stylesheet">
+      <!-- --> 
+   </head>
    <body>
-      <div id="particles-js">
-         <div class="background-image" style="right: 0;top: 4.5%;width: auto;position: absolute;margin-right: 6%;background: transparent;">
-            <img src="/about/Moon.png" alt="picture of full Moon">
-         </div>
+      <div id="particles-js" style="background-image: url('https://yk-liu.github.io/about/Moon.png');background-size: 20%;background-repeat: no-repeat;background-position: 80% 20%;">
          <div class="header">
             <h1>
                <span class="site-title">{{site.title}}</span>
@@ -28,14 +27,18 @@
       </div>
       <section id="about">
          <div class="lower">
-            
-               {{ content }}
-            
+            {{ content }}
          </div >
       </section>
-      <script src= "/assets/js/sweet-scroll.min.js"></script>
-      <script src="/assets/js/particles_conf.js"></script>
-      <script src="/assets/js/particles.min.js"></script>
+      <script src= "https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.js"></script>
+      <script src="{{site.url}}{{site.baseurl}}/assets/js/particles_conf.js"></script>
+      <script>
+         /* sweetScroll load */
+         	document.addEventListener('DOMContentLoaded', () => {
+         		const scroller = new SweetScroll({/* some options */});
+         	}, false);
+      </script>
    </body>
    {% include footer.html analytics=false %} 
 </html>

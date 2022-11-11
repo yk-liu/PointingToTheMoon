@@ -1,5 +1,4 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
- @import url(https://fonts.googleapis.com/css?family=Montserrat);
 html{
     line-height:1.15;
     -ms-text-size-adjust:100%;
@@ -67,14 +66,25 @@ fieldset{
 textarea{
     overflow:auto
 }
+
+code.highlighter-rouge {
+    color: #e96900;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 code, tt {
     /* font-family: Source Sans Pro, Roboto Mono, Monaco, courier, monospace !important; */
 	margin: 0 2px;
-    padding: 2px 4px;
+  padding: 2px 4px;
 	font-size: 0.92rem;
 	background-color: #eeeeee;
 	border-radius: 4px;
 	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#particles-js{
+		font-family:'Montserrat',sans-serif;
 }
 
 body{
@@ -82,8 +92,10 @@ body{
     font-size:100%;
     line-height:1.5;
     color:#555;
-    font-family:'Montserrat',sans-serif
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif
 }
+
+
 article,aside,figcaption,figure,footer,header,nav,section{
     display:block
 }
@@ -303,7 +315,6 @@ sub,sup{
 .user-details p{
     font-size:16px;
 		font-size: 1.2rem;
-    font-weight: 600;
 }
 
 @media screen and (max-width: 500px) {
@@ -315,13 +326,5 @@ sub,sup{
 }
 }
 
-
-.footer{
-    background:#1a222c;
-    padding:10px 0;
-    margin-top:100px;
-    text-align:center;
-    color:white
-}
 
  
